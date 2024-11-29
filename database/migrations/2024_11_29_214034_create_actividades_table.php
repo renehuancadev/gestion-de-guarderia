@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('actividades', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('niño_id');
-            $table->foreign('niño_id')->references('id')->on('niños');
-            $table->unsignedBigInteger('tipo_actividad');
-            $table->foreign('tipo_actividad')->references('id')->on('tiposactividad');
+            $table->unsignedBigInteger('nino_id');
+            $table->foreign('nino_id')->references('id')->on('ninos');
+            $table->unsignedBigInteger('tipo_actividad_id');
+            $table->foreign('tipo_actividad_id')->references('id')->on('tiposactividad');
             $table->date('fecha');
             $table->text('descripcion');
             $table->timestamps();
