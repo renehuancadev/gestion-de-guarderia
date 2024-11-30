@@ -7,7 +7,7 @@ use App\Http\Controllers\TipoActividadController;
 use App\Http\Controllers\TutorController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return to_route('ninos.index');
 });
 
 Route::get('/niños', [NinoController::class, 'index'])->name('ninos.index');
