@@ -27,19 +27,16 @@
             <div class="flex items-center">
                 <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
                     <li>
-                        <a href="#" class="text-gray-900 dark:text-white hover:underline">Inicio</a>
-                    </li>
-                    <li>
                         <a href="{{ route('ninos.index') }}" class="text-gray-900 dark:text-white hover:underline">Niños</a>
                     </li>
                     <li>
-                        <a href="#" class="text-gray-900 dark:text-white hover:underline">Actividades</a>
+                        <a href="{{ route('actividades.index') }}" class="text-gray-900 dark:text-white hover:underline">Actividades</a>
                     </li>
                     <li>
-                        <a href="#" class="text-gray-900 dark:text-white hover:underline">Tutores</a>
+                        <a href="{{ route('tutores.index') }}" class="text-gray-900 dark:text-white hover:underline">Tutores</a>
                     </li>
                     <li>
-                        <a href="#" class="text-gray-900 dark:text-white hover:underline">Tipos de Actividad</a>
+                        <a href="{{ route('tiposactividad.index') }}" class="text-gray-900 dark:text-white hover:underline">Tipos de Actividad</a>
                     </li>
                 </ul>
             </div>
